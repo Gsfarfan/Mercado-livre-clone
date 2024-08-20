@@ -4,11 +4,20 @@ import AppContext from "./AppContext";
 
 function Provider({children}) {
 
-  const [name, setName] = useState('Manual');
+  const [products, setProducts] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [isCartVisible, setIsCartVisible] = useState(false)
 
   const value = {
-    name,
-    setName
+    products,
+    setProducts,
+    loading,
+    setLoading,
+    cartItems,
+    setCartItems,
+    isCartVisible, 
+    setIsCartVisible,
   };
 
   return ( 
