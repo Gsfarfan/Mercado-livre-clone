@@ -6,7 +6,7 @@ import CartButton from "../CartButton/CartButton";
 function Header() {
   return(
    <header className="header">
-   <div> 
+   <div className="container"> 
 
    <SearchBar/>
    <CartButton/>
